@@ -10,16 +10,8 @@
 
 `var level = require('level');
 var db = level('./test.db');
-db.put('name', 'levelup', function(err) {
-    if (err) return console.log('Ooops!', err)
+db.put('name', 'levelup', function(err) { if (err) return console.log('Ooops!', err) db.get('name', function(err, value) { if (err) return console.log('Ooops!', err) console.log('name=' + value) }) })`
 
-    db.get('name', function(err, value) {
-        if (err) return console.log('Ooops!', err)
-           
-        console.log('name=' + value)
-    })
-})
-`
 -- Make sure you have a FOLDER named test.db and make sure its not a file.
 -- Run the script above to put necessary files into the test.db .
 
