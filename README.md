@@ -15,11 +15,11 @@ db.put('name', 'levelup', function(err) {
 
     db.get('name', function(err, value) {
         if (err) return console.log('Ooops!', err)
-            // Ta da!
+           
         console.log('name=' + value)
     })
-})`
-
+})
+`
 -- Make sure you have a FOLDER named test.db and make sure its not a file.
 -- Run the script above to put necessary files into the test.db .
 
